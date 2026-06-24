@@ -1,0 +1,35 @@
+{
+  "name": "vite-vue3-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daily demos in vite vue3 monorepo",
+  "main": "index.js",
+  "scripts": {
+    "dev:web-picture-collage": "pnpm --filter web-picture-collage dev",
+    "build:web-picture-collage": "pnpm --filter web-picture-collage build",
+    "preview:web-picture-collage": "pnpm --filter web-picture-collage preview",
+    "dev:web-quill-editor": "pnpm --filter web-quill-editor dev",
+    "build:web-quill-editor": "pnpm --filter web-quill-editor build",
+    "preview:web-quill-editor": "pnpm --filter web-quill-editor preview"
+  },
+  "keywords": [],
+  "author": "coderjs54",
+  "license": "MIT",
+  "packageManager": "pnpm@10.34.1",
+  "workspaces": [
+    "projects/*"
+  ],
+  "dependencies": {
+    "vue": "^3.5.38",
+    "@vueup/vue-quill": "^1.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.3",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/tsconfig": "^0.9.1",
+    "sass": "^1.101.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.0",
+    "vue-tsc": "^3.2.8"
+  }
+}
