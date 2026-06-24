@@ -38,10 +38,10 @@ jobs:
         run: pnpm install
 
       - name: Build web-picture-collage
-        run: pnpm --filter web-picture-collage build
+        run: pnpm build:web-picture-collage
 
       - name: Build web-quill-editor
-        run: pnpm --filter web-quill-editor build
+        run: pnpm build:web-quill-editor
 
       - name: Prepare deployment directory
         run: |
