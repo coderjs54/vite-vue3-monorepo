@@ -1,0 +1,11 @@
+{
+  "name": "web-particles-effect",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm exec vite --host",
+    "build": "pnpm exec vite build",
+    "preview": "pnpm exec vite preview"
+  }
+}

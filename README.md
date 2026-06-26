@@ -8,6 +8,7 @@
 |------|------|
 | web-picture-collage | https://coderjs54.github.io/vite-vue3-monorepo/web-picture-collage/ |
 | web-quill-editor | https://coderjs54.github.io/vite-vue3-monorepo/web-quill-editor/ |
+| web-particles-effect | https://coderjs54.github.io/vite-vue3-monorepo/web-particles-effect/ |
 
 ## 目录结构
 
@@ -15,7 +16,8 @@
 vite-vue3-monorepo/
 ├── projects/                 # 子项目目录
 │   ├── web-picture-collage/  # 拼图工坊
-│   └── web-quill-editor/     # 富文本编辑器
+│   ├── web-quill-editor/     # 富文本编辑器
+│   └── web-particles-effect/ # 粒子星空背景效果
 ├── shared/                   # 共享配置
 │   └── viteConfig.js         # Vite 共享配置
 ├── package.json              # 根依赖配置
@@ -39,6 +41,7 @@ vite-vue3-monorepo/
 |----------|----------|----------|
 | [web-picture-collage](projects/web-picture-collage/README.md) | 自由画布拼图工具，支持图片上传、拖拽、缩放、旋转、文字添加等功能 | [查看详情](projects/web-picture-collage/README.md) |
 | [web-quill-editor](projects/web-quill-editor/README.md) | 双栏布局富文本编辑器，左侧编辑区，右侧实时预览区 | [查看详情](projects/web-quill-editor/README.md) |
+| [web-particles-effect](projects/web-particles-effect/README.md) | 全屏动态粒子星空背景效果，支持粒子连线、鼠标引力等交互特性 | [查看详情](projects/web-particles-effect/README.md) |
 
 ## 安装与构建
 
@@ -62,13 +65,16 @@ pnpm build:web-picture-collage
 
 # 构建 web-quill-editor
 pnpm build:web-quill-editor
+
+# 构建 web-particles-effect
+pnpm --filter web-particles-effect build
 ```
 
 ### 并行构建（推荐）
 
 ```bash
 # 使用 pnpm 并行构建所有项目
-pnpm --filter web-picture-collage build & pnpm --filter web-quill-editor build
+pnpm --filter web-picture-collage build & pnpm --filter web-quill-editor build & pnpm --filter web-particles-effect build
 ```
 
 ## 开发环境
@@ -81,6 +87,9 @@ pnpm dev:web-picture-collage
 
 # 启动 web-quill-editor 开发服务器
 pnpm --filter web-quill-editor dev
+
+# 启动 web-particles-effect 开发服务器
+pnpm --filter web-particles-effect dev
 ```
 
 ### 开发配置
@@ -97,6 +106,9 @@ pnpm preview:web-picture-collage
 
 # 预览 web-quill-editor
 pnpm --filter web-quill-editor preview
+
+# 预览 web-particles-effect
+pnpm --filter web-particles-effect preview
 ```
 
 ### GitHub Pages 部署
@@ -107,6 +119,7 @@ pnpm --filter web-quill-editor preview
 
 - web-picture-collage: `https://<username>.github.io/vite-vue3-monorepo/web-picture-collage/`
 - web-quill-editor: `https://<username>.github.io/vite-vue3-monorepo/web-quill-editor/`
+- web-particles-effect: `https://<username>.github.io/vite-vue3-monorepo/web-particles-effect/`
 
 **部署配置**：
 

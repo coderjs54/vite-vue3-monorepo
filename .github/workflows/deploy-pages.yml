@@ -43,12 +43,17 @@ jobs:
       - name: Build web-quill-editor
         run: pnpm build:web-quill-editor
 
+      - name: Build web-particles-effect
+        run: pnpm build:web-particles-effect
+
       - name: Prepare deployment directory
         run: |
           mkdir -p deployment/web-picture-collage
           mkdir -p deployment/web-quill-editor
+          mkdir -p deployment/web-particles-effect
           cp -r projects/web-picture-collage/dist/* deployment/web-picture-collage/
           cp -r projects/web-quill-editor/dist/* deployment/web-quill-editor/
+          cp -r projects/web-particles-effect/dist/* deployment/web-particles-effect/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

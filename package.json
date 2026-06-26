@@ -10,7 +10,10 @@
     "preview:web-picture-collage": "pnpm --filter web-picture-collage preview",
     "dev:web-quill-editor": "pnpm --filter web-quill-editor dev",
     "build:web-quill-editor": "pnpm --filter web-quill-editor build",
-    "preview:web-quill-editor": "pnpm --filter web-quill-editor preview"
+    "preview:web-quill-editor": "pnpm --filter web-quill-editor preview",
+    "dev:web-particles-effect": "pnpm --filter web-particles-effect dev",
+    "build:web-particles-effect": "pnpm --filter web-particles-effect build",
+    "preview:web-particles-effect": "pnpm --filter web-particles-effect preview"
   },
   "keywords": [],
   "author": "coderjs54",
