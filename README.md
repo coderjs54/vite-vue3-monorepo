@@ -41,7 +41,7 @@ vite-vue3-monorepo/
 |----------|----------|----------|
 | [web-picture-collage](projects/web-picture-collage/README.md) | 自由画布拼图工具，支持图片上传、拖拽、缩放、旋转、文字添加等功能 | [查看详情](projects/web-picture-collage/README.md) |
 | [web-quill-editor](projects/web-quill-editor/README.md) | 双栏布局富文本编辑器，左侧编辑区，右侧实时预览区 | [查看详情](projects/web-quill-editor/README.md) |
-| [web-particles-effect](projects/web-particles-effect/README.md) | 全屏动态粒子星空背景效果，支持粒子连线、鼠标引力等交互特性 | [查看详情](projects/web-particles-effect/README.md) |
+| [web-particles-effect](projects/web-particles-effect/README.md) | 全屏动态粒子星空背景效果，支持粒子连线、鼠标引力/斥力等多种交互模式 | [查看详情](projects/web-particles-effect/README.md) |
 
 ## 安装与构建
 
